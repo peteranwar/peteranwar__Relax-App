@@ -60,8 +60,8 @@ body .container {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   margin: auto;
   position: relative;
   -webkit-transform: scale(1);
@@ -72,13 +72,13 @@ body .container .text {
   margin: auto;
   font-size: 1.5rem;
   font-family: sans-serif;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
 
 body .container .gradient-circle {
   background: conic-gradient(#e04b06, #e04b06, #e04b06, #fff, #fff, #631313, #631313, #631313);
-  height: 320px;
-  width: 320px;
+  height: 290px;
+  width: 290px;
   position: absolute;
   top: -10px;
   left: -10px;
@@ -95,14 +95,40 @@ body .container .circle {
   left: 0;
   z-index: -1;
   border-radius: 50%;
+  -webkit-animation: bground 5s linear forwards infinite;
+          animation: bground 5s linear forwards infinite;
+}
+
+@-webkit-keyframes bground {
+  0% {
+    background: #c47932;
+  }
+  50% {
+    background: #d8bb38;
+  }
+  60% {
+    background: #c47945;
+  }
+}
+
+@keyframes bground {
+  0% {
+    background: #c47932;
+  }
+  50% {
+    background: #d8bb38;
+  }
+  60% {
+    background: #c47945;
+  }
 }
 
 body .container .pointer-container {
   position: absolute;
   top: -40px;
-  left: 140px;
+  left: 130px;
   width: 20px;
-  height: 190px;
+  height: 180px;
   -webkit-animation: rotate 7.5s linear forwards infinite;
           animation: rotate 7.5s linear forwards infinite;
   -webkit-transform-origin: bottom center;
