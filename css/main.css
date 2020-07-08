@@ -125,10 +125,10 @@ body .container .circle {
 
 body .container .pointer-container {
   position: absolute;
-  top: -40px;
-  left: 130px;
+  top: -35px;
+  left: 125px;
   width: 20px;
-  height: 180px;
+  height: 170px;
   -webkit-animation: rotate 7.5s linear forwards infinite;
           animation: rotate 7.5s linear forwards infinite;
   -webkit-transform-origin: bottom center;
